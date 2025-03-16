@@ -1,5 +1,6 @@
 /* Import KaTeX CSS */
 @import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
+/* @import 'katex/dist/katex.min.css'; */
 
 /* Custom styling for KaTeX equations */
 .katex-display {

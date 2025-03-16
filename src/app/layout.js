@@ -1,6 +1,6 @@
 import "./globals.css";
 import "./prism-theme.css";
-import "./katex.css";    
+import "katex/dist/katex.min.css";  
 import Navigation from './Navigation'
 
 export const metadata = {

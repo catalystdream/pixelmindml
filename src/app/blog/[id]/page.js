@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from '@/lib/blog';
 import Link from 'next/link';
+import 'katex/dist/katex.min.css';
 
 // Generate static paths for all blog posts
 export async function generateStaticParams() {

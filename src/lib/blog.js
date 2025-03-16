@@ -4,7 +4,13 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { highlightCode } from './syntax-highlight';
-import { renderMath } from './math-render';
+// import { renderMath } from './math-render';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeStringify from 'rehype-stringify';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
@@ -60,12 +66,28 @@ export async function getPostData(id) {
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
+    .use(remarkParse)
+  .use(remarkMath)
+  .use(remarkRehype)
+  .use(rehypeKatex)
+  .use(rehypeStringify)
     .process(matterResult.content);
   let contentHtml = processedContent.toString();
   // Apply syntax highlighting
   contentHtml = highlightCode(contentHtml); 
-   // Render math equations
-   contentHtml = renderMath(contentHtml);
+//    // Render math equations
+//    contentHtml = renderMath(contentHtml);
+   // Process markdown with math support
+//   const processedContent = await unified()
+//   .use(remarkParse)
+//   .use(remarkMath)
+//   .use(remarkRehype)
+//   .use(rehypeKatex)
+//   .use(rehypeStringify)
+//   .process(matterResult.content);
+
+// const contentHtml = processedContent.toString();
+
   // Combine the data with the id and contentHtml
   return {
     id,

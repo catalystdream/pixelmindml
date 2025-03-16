@@ -13,9 +13,9 @@ Neural networks have revolutionized how we approach complex dynamical systems. I
 
 When modeling dynamical systems, we often start with a differential equation of the form:
 
-$$\frac{dx}{dt} = f(x, t, \theta)$$
+$$ \frac{dx}{dt} = f(x, t, \theta) $$
 
-where $x$ represents the state variables, $t$ is time, and $\theta$ are the system parameters.
+where $ x $ represents the state variables, $t$ is time, and $\theta$ are the system parameters.
 
 ## Simple Implementation Example
 
