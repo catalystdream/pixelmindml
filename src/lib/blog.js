@@ -45,16 +45,27 @@ export function getSortedPostsData() {
   });
 }
 
+// export function getAllPostIds() {
+//   const fileNames = fs.readdirSync(postsDirectory);
+//   console.log("Generated IDs:", paths); // Add logging
+//   return paths;
+//   return fileNames.map((fileName) => {
+//     return {
+//       params: {
+//         id: fileName.replace(/\.md$/, ''),
+//       },
+//     };
+//   });
+// }
 export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ''),
-      },
-    };
-  });
-}
+    const fileNames = fs.readdirSync(postsDirectory);
+    // Map filenames to the format needed for generateStaticParams()
+    const paths = fileNames.map((fileName) => ({
+      id: fileName.replace(/\.md$/, ''),
+    }));
+    console.log("Generated IDs:", paths); // Now logging works
+    return paths; // Only one return statement
+  }
 
 export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.md`);

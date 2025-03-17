@@ -1,4 +1,4 @@
-import { getAllPostIds, getPostData } from '@/lib/blog';
+import { getAllPostIds, getPostData } from '../../../lib/blog';
 import Link from 'next/link';
 import 'katex/dist/katex.min.css';
 

@@ -21,7 +21,7 @@ export default function PythonSatellitePage() {
         <div className="mt-8 space-y-4">
           <h2 className="text-2xl font-semibold">How It Works</h2>
           <p>
-            This simulation uses a Python backend with FastAPI to calculate accurate orbital mechanics using scipy's differential equation solver. The frontend visualizes the results using Three.js.
+            This simulation uses a Python backend with FastAPI to calculate accurate orbital mechanics using scipy&apos;s differential equation solver. The frontend visualizes the results using Three.js.
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>Python backend calculates satellite trajectory using real physics</li>

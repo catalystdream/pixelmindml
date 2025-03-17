@@ -6,7 +6,7 @@ export default function About() {
           
           <div className="mb-8">
             <p className="text-xl mb-4">
-              I'm an engineer specializing in scientific machine learning and dynamical systems. 
+              I&apos;m an engineer specializing in scientific machine learning and dynamical systems. 
               My research focuses on using neural networks to model complex engineering phenomena.
             </p>
             <p className="text-xl mb-4">

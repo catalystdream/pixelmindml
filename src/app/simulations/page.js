@@ -55,21 +55,36 @@ export default function SimulationsPage() {
           </div>
         </div>
         
+
+        <div className="p-6 border rounded-lg hover:shadow-md transition-shadow">
+            <h2 className="text-2xl font-semibold mb-2">Render.com + Next.js</h2>
+            <p className="mb-4">Cloud-hosted Python API on Render.com with Next.js frontend.</p>
+            <ul className="mb-4 text-sm text-gray-600 space-y-1">
+              <li>✅ Accurate physics</li>
+              <li>✅ Cloud-hosted API</li>
+              <li>✅ No local server needed</li>
+              <li>❌ Free tier spin-up delay</li>
+            </ul>
+            <Link href="/simulations/render-satellite" className="text-blue-600 hover:underline">
+              View simulation →
+            </Link>
+          </div>
+
         <div className="mt-10 p-6 bg-gray-50 rounded-lg">
           <h2 className="text-2xl font-semibold mb-4">Choosing the Right Approach</h2>
           <p className="mb-4">
-            Each implementation approach has different trade-offs. Here's when to use each:
+            Each implementation approach has different trade-offs. Here&apos;s when to use each:
           </p>
           
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-medium">Direct Next.js Implementation</h3>
-              <p>Best for simpler visualizations where you want seamless integration with your site design and don't need complex physics calculations.</p>
+              <p>Best for simpler visualizations where you want seamless integration with your site design and don&apos;t need complex physics calculations.</p>
             </div>
             
             <div>
               <h3 className="text-lg font-medium">Python Backend + Next.js Frontend</h3>
-              <p>Ideal for scientifically accurate simulations that need Python's numerical libraries while maintaining a polished, integrated UI experience.</p>
+              <p>Ideal for scientifically accurate simulations that need Python&apos;s numerical libraries while maintaining a polished, integrated UI experience.</p>
             </div>
             
             <div>

@@ -18,7 +18,7 @@ export default function Home() {
             and interactive simulations focused on scientific machine learning.
           </p>
           <p className="text-xl">
-            I'll be sharing insights on neural networks for engineering applications,
+            I&apos;ll be sharing insights on neural networks for engineering applications,
             dynamical systems modeling, and computational techniques.
           </p>
         </div>
