@@ -45,7 +45,7 @@ export default async function SpaceWeatherEventsPage() {
         <h1 className="text-4xl font-bold mb-6">Recent Solar Events</h1>
         
         <p className="text-xl mb-8">
-          Recent significant space weather events from NASA's DONKI (Space Weather Database Of Notifications, Knowledge, Information).
+          Recent significant space weather events from NASA&apos;s DONKI (Space Weather Database Of Notifications, Knowledge, Information).
           Showing events from the last 30 days.
         </p>
         
@@ -190,7 +190,7 @@ export default async function SpaceWeatherEventsPage() {
           <div className="prose">
             <p>
               Space weather events are phenomena that occur in space which can impact Earth and its technological systems.
-              The three main types of events tracked by NASA's DONKI system are:
+              The three main types of events tracked by NASA&apos;s DONKI system are:
             </p>
             <ul className="list-disc pl-6 mt-2">
               <li>
@@ -203,11 +203,11 @@ export default async function SpaceWeatherEventsPage() {
               </li>
               <li>
                 <strong>High Speed Solar Wind Streams:</strong> Fast-moving solar wind originating from coronal holes 
-                on the Sun's surface.
+                on the Sun&apos;s surface.
               </li>
             </ul>
             <p className="mt-4 text-sm">
-              Data provided by NASA's DONKI API. For more information, visit the <a href="https://kauai.ccmc.gsfc.nasa.gov/DONKI/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">DONKI website</a>.
+              Data provided by NASA&apos;s DONKI API. For more information, visit the <a href="https://kauai.ccmc.gsfc.nasa.gov/DONKI/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">DONKI website</a>.
             </p>
           </div>
         </div>

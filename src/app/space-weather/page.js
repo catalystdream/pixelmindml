@@ -13,7 +13,7 @@ export default function SpaceWeatherPage() {
         <h1 className="text-4xl font-bold mb-6">Space Weather Dashboard</h1>
         
         <p className="text-xl mb-8">
-          Real-time monitoring of solar and geomagnetic activity affecting Earth's magnetosphere and space environment.
+          Real-time monitoring of solar and geomagnetic activity affecting Earth&apos;s magnetosphere and space environment.
         </p>
          
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -35,7 +35,7 @@ export default function SpaceWeatherPage() {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Magnetosphere Simulation</h2>
           <p className="mb-4">
-            This 3D visualization shows how the solar wind interacts with Earth's magnetic field,
+            This 3D visualization shows how the solar wind interacts with Earth&apos;s magnetic field,
             creating the magnetosphere. Current solar wind conditions affect the simulation.
           </p>
           <div className="bg-white rounded-lg shadow overflow-hidden">
@@ -43,7 +43,7 @@ export default function SpaceWeatherPage() {
           </div>
           <p className="mt-2 text-sm text-gray-600">
             Drag to rotate, scroll to zoom. The visualization shows how solar wind particles (yellow) 
-            flow around Earth's magnetosphere and how the field lines (blue) are compressed on the day side.
+            flow around Earth&apos;s magnetosphere and how the field lines (blue) are compressed on the day side.
           </p>
         </div>
         
@@ -78,7 +78,7 @@ export default function SpaceWeatherPage() {
               It can impact satellite operations, GPS accuracy, power grids, and create beautiful auroras.
             </p>
             <p>
-              This dashboard displays real-time data from NOAA's Space Weather Prediction Center and NASA APIs,
+              This dashboard displays real-time data from NOAA&apos;s Space Weather Prediction Center and NASA APIs,
               visualizing current conditions and providing alerts for significant space weather events.
             </p>
             <h3 className="text-lg font-medium text-blue-800 mt-4">Key Indicators</h3>
