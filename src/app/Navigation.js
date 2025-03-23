@@ -14,10 +14,12 @@ export default function Navigation() {
           <Link href="/blog" className="hover:text-blue-300 transition-colors">
             Blog
           </Link>
-          <Link href="/simulations" className="hover:text-blue-300 transition-colors">
+                    <Link href="/simulations" className="hover:text-blue-300 transition-colors">
             Simulations
           </Link>
-
+          <Link href="/space-weather" className="hover:text-blue-300 transition-colors">
+            Space Weather
+          </Link>
           <Link href="/about" className="hover:text-blue-300 transition-colors">
             About
           </Link>
